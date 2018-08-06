@@ -36,7 +36,7 @@ namespace ExcelMapper.Mappings.Mappers
         {
             try
             {
-                value = Enum.Parse(EnumType, readResult.StringValue);
+                value = Enum.Parse(EnumType, readResult.StringValue, true);
                 return PropertyMapperResultType.Success;
             }
             catch
